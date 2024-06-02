@@ -2,7 +2,7 @@
 
 import sys, csv, re
 
-codes = [{"code":"13AC.00","system":"readv2"},{"code":"13AB.00","system":"readv2"},{"code":"66A3.00","system":"readv2"},{"code":"13B1.00","system":"readv2"},{"code":"8CA4100","system":"readv2"},{"code":"ZV65312","system":"readv2"},{"code":"66A9.00","system":"readv2"}];
+codes = [{"code":"13AC.00","system":"readv2"},{"code":"13AB.00","system":"readv2"},{"code":"66A3.00","system":"readv2"},{"code":"13B1.00","system":"readv2"},{"code":"8CA4100","system":"readv2"},{"code":"66A9.00","system":"readv2"}];
 REQUIRED_CODES = 1;
 with open(sys.argv[1], 'r') as file_in, open('type-2-diabetes-potential-cases.csv', 'w', newline='') as file_out:
     csv_reader = csv.DictReader(file_in)
